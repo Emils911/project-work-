@@ -1,0 +1,534 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  
+}
+
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+textarea:focus{
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+.landing{
+  height: 100vh;
+  background-image: url(/img/flat-lay-work-desk-with-agenda-coffee-cup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+
+
+
+.desktop{
+  justify-content: center;
+  gap: 5em;
+}
+
+.desktop a{
+  text-decoration: none;
+  position: relative;
+
+}
+
+.desktop a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.desktop a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5em;
+  padding: 2.5em;
+
+  
+}
+
+.logo{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white ;
+}
+
+
+
+.intro{
+ 
+ padding: 1em;
+
+height: 80vh;
+
+}
+
+.intro div{
+  margin: .1em;
+ 
+}
+
+
+
+.about{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.about span{
+  color: #007BFF;
+}
+
+
+.about p{
+  font-size: 1em;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
+
+.btn button{
+  background-color: #007BFF;
+  color: white;
+  padding: .5em 1.5em;
+  border: none;
+  border-radius: .5em;
+  margin: .5em;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.btn button:hover{
+  background-color: #0056b3;
+}
+
+
+#contact{
+  background-color: transparent;
+  color: #ffff;
+  text-decoration: underline;
+ 
+ 
+}
+
+#contact:hover{
+  background-color: #007BFF;
+  color: white;
+}
+
+.media{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 1em;
+  position: absolute;
+  bottom: 2em;
+ 
+ 
+}
+
+
+.media i{
+  font-size: 1.5em;
+ color: white;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+
+
+.content{
+ padding: 2em; 
+
+}
+
+
+
+.content div{
+ 
+  height: 100%;
+  width: 100%;
+  position: relative;
+ margin: 1em;
+ 
+}
+
+
+
+.code{
+  background-image: url(/img/office-chair-still-life.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.message{
+
+ text-align: left;
+ margin: 0;
+ padding: 2em;
+ position: relative;
+ 
+ 
+}
+
+.m-content{
+  margin: 1em 0;
+  text-align: justify;
+  color: rgb(65, 64, 64);
+}
+
+.message h2{
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: .5em;
+}
+
+#mbtn{
+  padding: .4em 2em;
+  border-radius: 1vh;
+  cursor: pointer;
+  background-color:#007BFF;
+  color: white;
+  box-shadow: 1px 1px 1px 1px darkgray;
+  transition: ease-in-out .2s;
+  border: solid 1px transparent;
+}
+
+#mbtn:hover{
+  background-color: darkblue;
+  
+}
+
+
+
+
+.abt-more{
+
+background-color: #007BFF;
+position: absolute;
+width: 0;
+height: 100%;
+right: 0;
+top: 5vh;
+transition: ease-in-out 1s;
+box-shadow: 1px 1px 2px 1px grey;
+border-bottom-left-radius: 5vh;
+border-top-left-radius: 5vh;
+
+}
+
+
+
+.close{
+  font-size: 5vh;
+  float: right;
+  font-weight: 600;
+  display: none;
+  padding: .2em;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
+
+
+
+.solutions section{
+ 
+  
+  padding: 1em;
+   
+  position: relative;
+  
+}
+
+.sysh1{
+  font-size: 1.2em;
+  color: #007BFF;
+  margin-bottom: .5em;
+  text-align: center;
+  position: absolute;
+  top: 1em;
+  left: 20%;
+}
+
+
+
+.project{
+  margin-bottom: 4em;
+ 
+}
+
+
+.ph1{
+  padding: 1em;
+}
+
+.project-card{
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.project-card:hover .img1
+{
+  transform: scale(1.2);
+}
+
+.project-card:hover .overlay{
+  background-color: rgba(0,0,0,0.7);
+}
+
+.project-card:hover .textlink{
+  opacity: 1;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;  
+transition: ease-in-out .5s;
+
+}
+
+
+.img1{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ptools li{
+ margin: .5em;
+ padding: .1em 1em;
+ border-radius: 2vh;
+ background-color: #1076e4;
+ color: white;
+ 
+}
+
+
+
+
+@media (min-width: 768px) {
+ .project{
+  margin: 2em;
+ }
+
+ .pr-ent{
+  width: 90%;
+  margin: 1em;
+ }
+}
+
+.textlink{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 1vh;
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: ease-in .3s;
+}
+
+
+
+
+
+.pr-ent{
+  height: 100%;
+ 
+ border-radius: 2vh;
+
+ 
+}
+
+.fe-intro{
+  padding: 1em;
+  color: rgb(65, 64, 64);
+  
+}
+
+.p-site{
+color: black;
+margin-bottom: .5em;
+}
+
+
+
+.img1{
+  height: 40vh;
+   transition: ease-in-out .4s;
+   overflow: hidden;
+}
+
+.skills{
+padding: 2em;
+
+
+}
+
+#skills-header{
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
+ 
+  padding-top: 3em;
+}
+
+.skills div{
+  padding: 2em;
+ 
+ 
+}
+
+.c-1{
+  font-weight: 500;
+  font-size: x-large;
+  letter-spacing: 1px;
+  padding-bottom: .5em;
+}
+
+.skills p{
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.c-icons{
+ margin-bottom: 1em;
+}
+
+.c-icons i{
+  padding-left: 1em;
+  position: relative;
+  top: 1vh;
+  color: #007BFF;
+}
+
+
+
+input{
+  
+  padding: .5em;
+  display: block;
+  margin-bottom: .5em;
+  margin-top: .5em;
+border-radius: 2vh;
+background-color: ghostwhite;
+width: 100%;
+}
+
+textarea{
+  border: none;
+  margin: 1em;
+  height: 30vh;
+  background-color:ghostwhite;
+  padding: 1em;
+  width: 100%;
+  border-radius: 2vh;
+}
+
+
+
+.formbox{
+  justify-content: center;
+  align-items: center;
+  padding:1em ;
+  
+box-shadow: 1px 1px 2px 1px grey;
+background-color: white;
+  border-radius: 2vh;
+ 
+}
+
+
+
+#btn-submit{
+  background-color: blue;
+  padding: .5em;
+  border-radius: 2vh;
+  color: white;
+  width: 100%;
+
+}
+
+
+footer{
+ 
+ 
+ 
+ background-color: rgb(23, 11, 49);
+ padding: 1em;
+}
+
+footer div{
+
+height: 100%;
+width: 100%;
+text-align: left;
+color: white;
+justify-content: center;
+align-items: center;
+padding: 2em;
+
+}
+
+.fth{
+  margin-bottom: 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+footer p{
+  color: rgb(179, 175, 175);
+}
+
+.licons i{
+  margin-right: 1.2em;
+}
